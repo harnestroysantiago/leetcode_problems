@@ -1,5 +1,7 @@
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
+        //more about the problem here
+        //https://leetcode.com/problems/two-sum/
         
         //declarations
         Dictionary <int,int> _tracker = new Dictionary<int,int> ();
