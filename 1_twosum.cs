@@ -27,7 +27,6 @@ public class Solution
             //check if remainder is in the tracker 
             if (_tracker.ContainsKey(_remainder))
             {
-
                 int _trackerIndex;
 
                 _tracker.TryGetValue(_remainder, out _trackerIndex);
