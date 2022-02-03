@@ -14,19 +14,19 @@ public class Solution
         }
 
         //store the number in a variable
-        int number = x;
+        int _number = x;
 
         //this will store the reverse of the number
-        int reverse = 0;
-        while (number > 0)
+        int _reverse = 0;
+        while (_number > 0)
         {
             // reverse * 10 -> gives us the correct base
             // number % 10 -> gives us the last digit
-            reverse = (reverse * 10) + (number % 10);
+            _reverse = (_reverse * 10) + (_number % 10);
             // number / 10 -> allows us to remove the last digit
-            number = number / 10;
+            _number = _number / 10;
         }
         //we compare if x == to our reversed number
-        return x == reverse;
+        return x == _reverse;
     }
 }
