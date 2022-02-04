@@ -20,47 +20,47 @@ public class Solution
     // X can be placed before L (50) and C (100) to make 40 and 90. 
     // C can be placed before D (500) and M (1000) to make 400 and 900.
     // Given a roman numeral, convert it to an integer.
-    public int RomanToInt(string s)
+    public int RomanToInt(string p_string)
     {
         //create a dictionary
-        Dictionary<char, int> romanTable = new Dictionary<char, int>();
+        Dictionary<char, int> _romanTable = new Dictionary<char, int>();
 
-        romanTable.Add('I', 1);
-        romanTable.Add('V', 5);
-        romanTable.Add('X', 10);
-        romanTable.Add('L', 50);
-        romanTable.Add('C', 100);
-        romanTable.Add('D', 500);
-        romanTable.Add('M', 1000);
+        _romanTable.Add('I', 1);
+        _romanTable.Add('V', 5);
+        _romanTable.Add('X', 10);
+        _romanTable.Add('L', 50);
+        _romanTable.Add('C', 100);
+        _romanTable.Add('D', 500);
+        _romanTable.Add('M', 1000);
 
         //get the length of the string
-        int n = s.Length;
+        int _n = p_string.Length;
 
         //get the first value
-        int number = romanTable[s[n - 1]];
+        int _number = _romanTable[p_string[_n - 1]];
 
         //validation for one char only, return number right away. 
         //right to jail.. erm.. return.
-        if (n == 1)
+        if (_n == 1)
         {
-            return number;
+            return _number;
         }
         else
         {
             //logic
-            for (int i = n - 2; i >= 0; i--)
+            for (int _i = _n - 2; _i >= 0; _i--)
             {
                 //test if we want to add or subtract pairs combination
-                if (romanTable[s[i]] >= romanTable[s[i + 1]])
+                if (_romanTable[p_string[_i]] >= _romanTable[p_string[_i + 1]])
                 {
-                    number += romanTable[s[i]];
+                    _number += _romanTable[p_string[_i]];
                 }
                 else
                 {
-                    number -= romanTable[s[i]];
+                    _number -= _romanTable[p_string[_i]];
                 }
             }
         }
-        return number;
+        return _number;
     }
 }
