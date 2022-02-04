@@ -5,16 +5,16 @@ public class Solution
     // Given an integer x, return true if x is palindrome integer.
     // An integer is a palindrome when it reads the same backward as forward.
     // For example, 121 is a palindrome while 123 is not.
-    public bool IsPalindrome(int x)
+    public bool IsPalindrome(int p_input)
     {
         //validation
-        if (x < 0)
+        if (p_input < 0)
         {
             return false;
         }
 
         //store the number in a variable
-        int _number = x;
+        int _number = p_input;
 
         //this will store the reverse of the number
         int _reverse = 0;
@@ -27,6 +27,6 @@ public class Solution
             _number = _number / 10;
         }
         //we compare if x == to our reversed number
-        return x == _reverse;
+        return p_input == _reverse;
     }
 }
