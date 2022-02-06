@@ -9,7 +9,7 @@ public class Solution
     public bool IsValid(string p_s)
     {
         //declaration
-        //stacks are best for these kind of problems, be cause we just need to check for a pair,
+        //stacks are best for these kind of problems, because we just need to check for a pair,
         //if an invalid pair comes, it invalidates the whole stack.
         Stack<char> _openSymbols = new Stack<char>();
 
