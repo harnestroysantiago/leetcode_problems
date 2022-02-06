@@ -7,6 +7,7 @@ public class Solution
     public string LongestCommonPrefix(string[] p_strs)
     {
         //declaration
+        //stringbuilder becasue we want to manipulate the string.
         StringBuilder _longestCommonPrefix = new StringBuilder();
 
         //validation
