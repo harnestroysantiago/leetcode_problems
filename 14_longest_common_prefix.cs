@@ -35,7 +35,7 @@ public class Solution
             //loop through each string in string array
             foreach (string _strs in p_strs)
             {
-                //if the current char at string, breaks the patter, 
+                //if the current char at string, breaks the pattern, 
                 if (_strs[_i] != _currentChar)
                 {
                     //we return, because we no longer have a prefix,
