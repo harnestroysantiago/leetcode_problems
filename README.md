@@ -2,14 +2,18 @@
 This is a compilations of leetcode problem solutions, updated as I solve more.
 
 ## naming conventions
-member variables are named 
+class member variables are named 
 
 `m_varname`
 
-parameter variables are named
+argument parameter variables are named
 
 `p_varname`
 
-local variables are named 
+local variables are prepend with _ 
 
 `_varname`
+
+nested local variables are prepend with additional _
+
+`__varname`
