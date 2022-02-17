@@ -13,3 +13,7 @@ parameter variables are named
 local variables are named 
 
 `_varname`
+
+nested local variables are appended with _
+
+`__varname`
