@@ -29,7 +29,7 @@ public class Solution {
             // ? replace the current node with the != next node.
             _temp = _temp.next;
         }
-        //return the head
+        //return the p_head
         return p_head;
     }
 }
