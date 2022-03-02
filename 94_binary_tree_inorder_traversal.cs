@@ -15,7 +15,7 @@ public class Solution {
     //? more info about the problem here
     //? https://leetcode.com/problems/binary-tree-inorder-traversal/
     //? Given the root of a binary tree, return the inorder traversal of its nodes' values.
-    //? more infor about the soliution here
+    //? more info about the soliution here
     //? https://www.youtube.com/watch?v=o_T8MswDI_Y
     public IList<int> InorderTraversal(TreeNode p_root) 
     {   
