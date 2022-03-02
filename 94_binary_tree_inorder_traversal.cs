@@ -40,7 +40,7 @@ public class Solution {
         //? add the value of the root, and then dig to the right side, of the tree
         p_list.Add(p_root.val);
 
-        //? since this is the last step we can return what ever is returned on the right tree.
+        //? since this is the last step we can return whatever is returned on the right tree.
         return BinaryTreeDetective(p_root.right, p_list);
     }
 }
