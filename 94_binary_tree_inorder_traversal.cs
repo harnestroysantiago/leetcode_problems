@@ -29,7 +29,7 @@ public class Solution {
     //? this helper functon, basically does the whole logic
     private List<int> BinaryTreeDetective(TreeNode p_root, List<int> p_list)
     {
-        //? if the root is null, return the lists
+        //? if the root is null, return the list
         if(p_root == null){
             return p_list;
         }
