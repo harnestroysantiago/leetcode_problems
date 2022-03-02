@@ -34,13 +34,16 @@ public class Solution {
             return p_list;
         }
 
-        //? check the node in this order (left dig, root, right dig), left dig down, if can not go down becuase of an invalid null node, we execute the next code, to add the value of the root to the list.
+        //? check the node in this order (left dig, root, right dig), 
+        //? left dig down, if can not go down becuase of an invalid null node,
+        //? we execute the next code, to add the value of the root to the list.
         p_list = BinaryTreeDetective(p_root.left, p_list);
 
         //? add the value of the root, and then dig to the right side, of the tree
         p_list.Add(p_root.val);
 
-        //? since this is the last step we can return whatever is returned on the right tree.
+        //? since this is the last step we can return whatever is returned on 
+        //? the right tree.
         return BinaryTreeDetective(p_root.right, p_list);
     }
 }
